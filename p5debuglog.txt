@@ -1,0 +1,45 @@
+Breakpoint 1, main () at p5final.c:28
+28    a=input();
+(gdb) s
+input () at p5final.c:3
+3   {
+(gdb) n
+5     printf("Enter the number :\n");
+(gdb) n
+Enter the number :
+6     scanf("%d",&a);
+(gdb) n
+n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p5final.c:29
+29    b=input();
+(gdb) s
+input () at p5final.c:3
+3   {
+(gdb) n
+5     printf("Enter the number :\n");
+(gdb) n
+Enter the number :
+6     scanf("%d",&a);
+(gdb) n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p5final.c:30
+30    hcf=gcd(a,b);
+(gdb) n
+31    output(a,b,hcf);
+(gdb) s
+output (a=32533, b=32533, hcf=32533) at p5final.c:22
+22    printf("The H.C.F (G.C.D) of %d and %d is %d",a,b,hcf);
+(gdb) n
+23  }
+(gdb) n
+main () at p5final.c:32
+32    return 0;
+(gdb) n
+33  }

@@ -1,0 +1,49 @@
+Breakpoint 1, main () at p6final.c:21
+21  {
+(gdb) n
+23    input_string(a);
+(gdb) s
+input_string (a=0x7ffd3afa8ea0 "") at p6final.c:4
+4     printf("Enter the string: \n");
+(gdb) n
+Enter the string: 
+5     scanf("%s",a);
+(gdb) n
+n
+6   }
+(gdb) n
+main () at p6final.c:25
+25    reverse_a=str_reverse(a);
+(gdb) s
+str_reverse (a=0x7ffd3afa8ea0 "n") at p6final.c:9
+9     int i,m=0;
+(gdb) n
+10    for(i=0;a[i]!='\0';i++)
+(gdb) n
+11      m++;
+(gdb) n
+10    for(i=0;a[i]!='\0';i++)
+(gdb) n
+12    return m;
+(gdb) n
+13  }
+(gdb) n
+main () at p6final.c:26
+26    output(a,reverse_a);
+(gdb) s
+output (a=0x7ffd3afa8ea0 "n", reversea=1 '\001') at p6final.c:16
+16    printf("The reverse of the string is: \n");
+(gdb) n
+The reverse of the string is: 
+17    for(int i=reversea-1;a[i]!='\0';i--)
+(gdb) n
+18      printf("%c",a[i]);
+(gdb) n
+17    for(int i=reversea-1;a[i]!='\0';i--)
+(gdb) n
+19  }
+(gdb) n
+main () at p6final.c:27
+27    return 0;
+(gdb) n
+28  }

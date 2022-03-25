@@ -1,0 +1,50 @@
+Breakpoint 1, main () at p3final.c:42
+42    n=input_number();
+(gdb) s
+input_number () at p3final.c:3
+3   {
+(gdb) n
+5     printf("Enter a number: \n");
+(gdb) n
+Enter a number: 
+6     scanf("%d",&n);
+(gdb) n
+n
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p3final.c:43
+43    composite=is_composite(n);
+(gdb) s
+is_composite (n=32745) at p3final.c:13
+13    if(n==0|| n==1)//The number 0 & 1 is neither prime nor composite number
+(gdb) n
+17    for (i = 2; i <= n / 2; i++)
+(gdb) n
+21      if (n % i == 0) 
+(gdb) n
+17    for (i = 2; i <= n / 2; i++)
+(gdb) n
+21      if (n % i == 0) 
+(gdb) n
+23        return 1;//composite
+(gdb) n
+28  }
+(gdb) n
+main () at p3final.c:44
+44    output(n,composite);
+(gdb) s
+output (n=32745, composite=1) at p3final.c:32
+32    if(composite==0)
+(gdb) n
+34    else if(composite==1)
+(gdb) n
+35    printf("The number %d is composite number",n);
+(gdb) n
+38  }
+(gdb) n
+main () at p3final.c:45
+45    return 0;
+(gdb) n
+46  }

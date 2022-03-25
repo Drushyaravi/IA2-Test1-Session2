@@ -1,0 +1,71 @@
+Breakpoint 1, main () at p2final.c:33
+33    a=input_side();
+(gdb) s
+input_side () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter a side length: \n");
+(gdb) n
+enter a side length: 
+6     scanf("%d",&a);
+(gdb) n
+n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:34
+34    b=input_side();
+(gdb) s
+input_side () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter a side length: \n");
+(gdb) n
+enter a side length: 
+6     scanf("%d",&a);
+(gdb) n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:35
+35    c=input_side();
+(gdb) s
+input_side () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter a side length: \n");
+(gdb) n
+enter a side length: 
+6     scanf("%d",&a);
+(gdb) n
+7     return a;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:36
+36    isscalene=check_scalene(a,b,c);
+(gdb) s
+check_scalene (a=32600, b=32600, c=32600) at p2final.c:12
+12    if (a!=b && a!=c && b!=c)
+(gdb) n
+16    return isscalene;
+(gdb) n
+17  }
+(gdb) n
+main () at p2final.c:37
+37    output(a,b,c,isscalene);
+(gdb) s
+output (a=32600, b=32600, c=32600, isscalene=527160792) at p2final.c:20
+20    if(isscalene==0)
+(gdb) n
+26      printf("The triange is not scalene");
+(gdb) n
+28  }
+(gdb) n
+main () at p2final.c:38
+38    return 0;
+(gdb) 
+39  }
+(gdb)
